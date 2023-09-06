@@ -1,0 +1,27 @@
+{
+  "name": "AOApp",
+  "version": "0.1.0",
+  "description": "Applet for Mach 2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.EEManfacturing.AOApplet",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^13.1.2",
+    "electron-builder": "^22.14.13"
+  }
+}
